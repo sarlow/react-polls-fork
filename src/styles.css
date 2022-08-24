@@ -13,6 +13,7 @@
 
 .poll .question {
   color: #3a3a3a;
+  font-size: 16px;
   text-align: inherit;
   font-weight: normal;
   margin: 0;
@@ -37,10 +38,11 @@
   margin: 5px 0;
 }
 
-.poll .answers .option, .poll .answers .result {
-  font-weight: bold;
-  border: 2px solid #000000;
-  border-radius: 5px;
+.poll .answers .option,
+.poll .answers .result {
+  font-weight: 400;
+  border: 1.5px solid #000000;
+  border-radius: 20px;
   cursor: pointer;
   width: 100%;
   font-size: 100%;
@@ -53,28 +55,34 @@
   background-color: inherit;
 }
 
-.poll .answers .option:hover, .poll .answers .option:active {
-	background: #3030303B;
+.poll .answers .option:hover,
+.poll .answers .option:active {
+  background: #3030303b;
 }
 
-.poll .answers .option.purple:hover, .poll .answers .option.purple:active {
-	background: #6d4b943B;
+.poll .answers .option.purple:hover,
+.poll .answers .option.purple:active {
+  background: #6d4b943b;
 }
 
-.poll .answers .option.red:hover, .poll .answers .option.red:active {
-	background: #FF28283B;
+.poll .answers .option.red:hover,
+.poll .answers .option.red:active {
+  background: #ff28283b;
 }
 
-.poll .answers .option.blue:hover, .poll .answers .option.blue:active {
-	background: #283EFF3B;
+.poll .answers .option.blue:hover,
+.poll .answers .option.blue:active {
+  background: #283eff3b;
 }
 
-.poll .answers .option.white:hover, .poll .answers .option.white:active {
-	background: #ffffff3B;
+.poll .answers .option.white:hover,
+.poll .answers .option.white:active {
+  background: #ffffff3b;
 }
 
-.poll .answers .option.cyan:hover, .poll .answers .option.cyan:active {
-	background: #00BCDD3B;
+.poll .answers .option.cyan:hover,
+.poll .answers .option.cyan:active {
+  background: #00bcdd3b;
 }
 
 .poll .answers .result {
@@ -87,7 +95,7 @@
 .poll .answers .result .fill {
   width: 0%;
   height: 100%;
-  border-radius: 3px;
+  border-radius: 20px 3px 3px 20px;
   display: flex;
   align-items: center;
   transition: all 0.5s ease;
@@ -97,7 +105,7 @@
   position: absolute;
   top: calc(19px - 9px);
   margin: 0 10px;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 .poll .answers .result .answer {
@@ -108,7 +116,7 @@
 }
 
 .poll .answers .result .answer.vote::after {
-  content: ' \2713';
+  content: " \2713";
 }
 
 .poll .votes {
